@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* this places the modal 20% from the top on the map and center with a white background*/
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 450px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute; /* this definitely needs to change for each map element*/
+    top: 10%; /* this also definitely needs to change for each map element because rn it places elements 20% away from the top*/
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+/* slightly adjusts the spacing vertically of the elements in the modal box*/
+.modal .flex {
+    display: flex;
+    align-items: center;
+}
+
+/* slightly stylistically modifies email input box */
+.modal input {
+    padding: 0.7rem 1rem; /*made email input box a little bigger*/
+    border: 1px solid #ddd; /* made border smaller and lighter*/
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* slighty changed the look of the text */
+.modal p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0.4rem 0 0.2rem;
+}
+
+/* modifies the x, submit, and open modal buttons */
+button {
+    cursor: pointer; /* not sure if this is necessary because most people will be using this on phones */
+    border: none;
+    font-weight: 600; /* only changes the submit button text - so can get rid of it*/
+}
+
+/* modifies only the submit and open modal buttons so probably can get rid of this whole thing */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* only modifies the open modal button so can get rid of it*/
+.btn-open {
+    position: absolute; /* moves open modal button up to map instead of below */
+    bottom: 150px; /* moves this to the bottom of the map */
+}
+
+.btn-close {
+    transform: translate(330px, -20px);
+    padding: 0.5rem 0.7rem;
+    background: #eee;
+    border-radius: 50%;  
+}

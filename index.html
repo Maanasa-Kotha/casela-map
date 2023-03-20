@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <h2>Casela Map</h2>
-    <img src="map-casela.jpg">
+    <img src="map-casela.jpg" usemap="#workmap">
+    <map name="workmap">
+        <area shape="poly" coords="608, 630, 688, 646, 764, 684, 824, 676, 942, 662, 1016, 660, 1070, 706, 900, 764, 878, 828, 808, 816, 646, 726, 578, 650"
+         alt="Tulawaka" href="tulawaka.html">
+        <area shape="circle" coords="1344,718,30", href="tulawaka.htm">
+    </map>
+
+    <section class="modal hidden">
+        <div class="flex">
+            <img src="user.jpg" width="50px" height="50px" alt="user"/>
+            <button class="btn-close">⨉</button>
+        </div>
+        <div>
+            <h3>Tulawaka</h3>
+            <p>
+                A roller coaster that has some incredible videws of the entire park and beyond.
+            </p>
+        </div>
+        <input type="email" id="email" placeholder="example@something.com">
+        <button class="btn">Submit</button>
+    </section>
+    <div class="overlay hidden"></div>
+    <button class="btn btn-open">Open Modal</button>
 </body>
 </html>
