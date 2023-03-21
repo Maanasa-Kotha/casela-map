@@ -15,13 +15,18 @@ body {
     min-height: 100vh;
 }
 
+.casela-map {
+    height: 100%;
+    width: auto;
+}
+
 /* this places the modal 20% from the top on the map and center with a white background*/
 .modal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.4rem;
-    width: 450px;
+    min-width: 450px;
     padding: 1.3rem;
     min-height: 250px;
     position: absolute; /* this definitely needs to change for each map element*/
@@ -99,4 +104,11 @@ button {
 /* hides items that should be hidden */
 .hidden {
     display: none;
+}
+
+/* */
+@media (max-width:600px) {
+    .modal {
+        min-width: 200px;
+    }
 }
