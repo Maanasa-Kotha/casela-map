@@ -16,7 +16,7 @@ body {
 }
 
 .casela-map {
-    height: 100%;
+    height:100vh;
     width: auto;
 }
 
