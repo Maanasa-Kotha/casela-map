@@ -29,6 +29,7 @@ body {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 15px;
+    z-index: 2;
 }
 
 /* slightly adjusts the spacing vertically of the elements in the modal box*/
@@ -76,9 +77,26 @@ button {
     bottom: 150px; /* moves this to the bottom of the map */
 }
 
+/*modifies the x to close the modal, might get rid of this */
 .btn-close {
     transform: translate(330px, -20px);
     padding: 0.5rem 0.7rem;
     background: #eee;
     border-radius: 50%;  
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* pushes this behind modal but we aren't blurring so not important or necessary */
+}
+
+/* hides items that should be hidden */
+.hidden {
+    display: none;
 }
