@@ -12,11 +12,16 @@
          alt="Tulawaka">
         <area shape="circle" coords="1344,718,30", href="tulawaka.htm">
     </map> -->
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1414">
-        <image width="2000" height="1414" xlink:href="map-casela.svg">
-        </image>
-        <polygon class="tulawaka" points="608, 630, 688, 646, 764, 684, 824, 676, 942, 662, 1016, 660, 1070, 706, 900, 764, 878, 828, 808, 816, 646, 726, 578, 650" fill="#fff" opacity="0.5"/>
-    </svg>
+    <div class="scaling-svg-container" style="padding-bottom: 92%">
+        <svg class="scaling-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1414">
+            <image xlink:href="map-casela.svg">
+            </image>
+            <polygon class="tulawaka" points="608, 630, 688, 646, 764, 684, 824, 676, 942, 662, 1016, 660, 1070, 706, 900, 764, 878, 828, 808, 816, 646, 726, 578, 650" fill="#fff" opacity="0.5"/>
+            <rect class="overlay hidden" x="0" y="0" width="2000" height="1414" />
+            <rect class="iw hidden" x="720" y="560" width="200px" height="100px" rx="10"/>
+            <text class="iw-text hidden" x="730" y="580" > Tulawaka - Rollercoaster</text>
+        </svg>
+    </div>
 
     <section class="modal hidden">
         <div class="flex">
@@ -34,6 +39,8 @@
     </section>
     <div class="overlay hidden"></div>
     <button class="btn btn-open">Open Modal</button>
+
+
     <script src="main.js"></script>
 </body>
 </html>
